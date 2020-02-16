@@ -1,6 +1,6 @@
 ﻿namespace Siakod3_tree
 {
-    partial class Form1
+    partial class TreeForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -28,41 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.inputLabel = new System.Windows.Forms.Label();
+            this.outLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // inputLabel
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 508);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.inputLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.inputLabel.AutoSize = true;
+            this.inputLabel.Location = new System.Drawing.Point(12, 508);
+            this.inputLabel.Name = "inputLabel";
+            this.inputLabel.Size = new System.Drawing.Size(35, 13);
+            this.inputLabel.TabIndex = 0;
+            this.inputLabel.Text = "Ввод:";
             // 
-            // label2
+            // outLabel
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 539);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "label1";
+            this.outLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.outLabel.AutoSize = true;
+            this.outLabel.Location = new System.Drawing.Point(12, 539);
+            this.outLabel.Name = "outLabel";
+            this.outLabel.Size = new System.Drawing.Size(43, 13);
+            this.outLabel.TabIndex = 0;
+            this.outLabel.Text = "Вывод:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1179, 561);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.outLabel);
+            this.Controls.Add(this.inputLabel);
             this.Name = "Form1";
             this.Text = "Идеально сбалансированное дерево";
-            this.ResizeEnd += new System.EventHandler(this.Form1_ResizeEnd);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
+            this.Resize += new System.EventHandler(this.Form1_Resize);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -70,8 +70,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label inputLabel;
+        private System.Windows.Forms.Label outLabel;
     }
 }
 
